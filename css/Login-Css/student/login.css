@@ -19,7 +19,7 @@ justify-content: center;
   border-top-right-radius: 90px;
   text-align: center;
   padding: 30px;
-  height: 80vh;
+  height: 90vh;
 }
 
 h3{
@@ -27,7 +27,7 @@ h3{
   font-size: 28px;
   /* background-color: #355389; */
   color: #FFFFFF;
-  font-weight: 300;
+  font-weight: 500;
 }
 form{
   display: flex;
@@ -54,9 +54,9 @@ input{
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  padding-right: 120px;
+  padding-right: 150px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 0.5px solid white;
   border-radius:  10px;
   color: #FFFFFF;
   outline: none;
@@ -73,13 +73,16 @@ p{
   margin: 0 auto;
   color: #FFFFFF;
   font-family: poppins;
-  font-size: 13px;
+  font-size: 15px;
 
 }
 span{
   color:#FFFFFF;
   font-family: poppins;
   font-size: 15px;
+}
+.holy{
+  margin: 0 auto;
 }
 .terms{
   color:#FFFFFF;
@@ -88,9 +91,9 @@ span{
 }
 .btn1{
   border: none;
-  border-radius: 5px;
-  padding-left: 100px;
-  padding-right: 100px;
+  border-radius: 7px;
+  padding-left: 120px;
+  padding-right: 120px;
   padding-top: 13px;
   padding-bottom: 13px;
   color: white;
@@ -106,20 +109,95 @@ a{
   font-size: 13px;
 }
 
-a:hover{
-  color: black;
+.continue{
+  text-decoration: none;
+  font-family: poppins;
+  font-size: 15px;
+  color: #FFFFFF;
 }
 
-@media(max-width: 477px){
-  input{
+.terms1{
+  padding-top: 10px;
+ }
+
+ hr{
+  width: 8rem;
+  outline: 1px thin white;
+  }
+
+ .line{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  }
+
+  .socials{
+    display: flex;
+    margin: 0 auto;
+    gap: 5rem;
+  }
+
+  .faculty-des{
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
+  padding-right: 220px;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius:  10px;
+  color: #FFFFFF;
+  outline: none;
+
+  }
+
+
+  
+  
+
+/*responsiveess css*/
+
+@media(max-width: 477px){
+
+  h3{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  input{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 15px;
   padding-right: 170px;
+  margin: 0 auto;
+  }
+
+  label{
+    margin: 0 10px;
   }
 
   .btn1{
   padding-left: 140px;
   padding-right: 140px;
+  border-radius: 10px;
+  padding-top:20px;
+  padding-bottom:20px;
   }
+
+  .welcome-container{
+    padding-bottom: 100px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+ 
+  .terms1{
+   padding-top: 10px;
+  }
+
+ .faculty-des{
+  padding-right: 240px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+
 }
