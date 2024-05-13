@@ -54,7 +54,7 @@ input{
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  padding-right: 100px;
+  padding-right: 120px;
   background-color: transparent;
   border: 1px solid white;
   border-radius:  10px;
@@ -68,3 +68,58 @@ label{
   font-size: 13px;
 }
 
+
+p{
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: poppins;
+  font-size: 13px;
+
+}
+span{
+  color:#FFFFFF;
+  font-family: poppins;
+  font-size: 15px;
+}
+.terms{
+  color:#FFFFFF;
+  font-family: poppins;
+  font-size: 15px;
+}
+.btn1{
+  border: none;
+  border-radius: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: white;
+  background-color:#F47458;
+  margin: 0 auto;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+a{
+  color:#F47458;
+  font-family: poppins;
+  font-size: 13px;
+}
+
+a:hover{
+  color: black;
+}
+
+@media(max-width: 477px){
+  input{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 170px;
+  }
+
+  .btn1{
+  padding-left: 140px;
+  padding-right: 140px;
+  }
+}
