@@ -4,6 +4,15 @@
   background-color: var(--base);
 }
 
+body{
+  height: 100vh;
+}
+
+/* .container{
+  height: 100dvh;
+} */
+
+
 --root{
   --base:#f3f9fe;
   --blue:#355389;
