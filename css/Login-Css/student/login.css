@@ -11,6 +11,9 @@ align-items: center;
 justify-content: center;
 
 }
+.arrow{
+  display: none;
+}
 .welcome-container{
   /*width: 50%;*/
   margin: 0 auto;
@@ -51,8 +54,8 @@ form{
 }
 input{
   /* padding: 15px 70px; */
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   padding-left: 15px;
   padding-right: 150px;
   background-color: transparent;
@@ -140,20 +143,113 @@ a{
   }
 
   .faculty-des{
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   padding-left: 15px;
-  padding-right: 220px;
+  padding-right: 180px;
   background-color: transparent;
   border: 0.5px solid white;
   border-radius:  10px;
   color: #FFFFFF;
   outline: none;
+  
 
   }
-
-
   
+  .department-des{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 15px;
+  padding-right: 2px;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius:  10px;
+  color: #FFFFFF;
+  outline: none;
+  }
+
+  .level-des{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 15px;
+  padding-right: 50px;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius:  10px;
+  color: #FFFFFF;
+  outline: none;
+  }
+
+  .student-container{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .student-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .texty p{
+    text-align: left;
+    font-family: poppins;
+    font-size: 13px;
+  }
+  .user-type{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .rep-button{
+  border: none;
+  border-radius: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: white;
+  background-color:#355389;
+  margin: 0 auto;
+  font-family: poppins;
+  cursor: pointer;
+  outline: 1px solid white;
+  }
+  .rep-button:hover{
+    background-color: #F47458;
+  }
+
+  .member-button{
+    border: none;
+    border-radius: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: white;
+    background-color:#355389;
+    margin: 0 auto;
+    font-family: poppins;
+    cursor: pointer;
+    outline: 1px solid white;
+  }
+
+  .member-button:hover{
+    background-color: #F47458;
+  }
+  .btn2{
+    border: none;
+  border-radius: 7px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: white;
+  background-color:#F47458;
+  margin: 0 auto;
+  font-family: poppins;
+  cursor: pointer;
+  }
   
 
 /*responsiveess css*/
@@ -165,8 +261,8 @@ a{
     font-weight: 500;
   }
   input{
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 15px;
   padding-right: 170px;
   margin: 0 auto;
@@ -195,9 +291,58 @@ a{
   }
 
  .faculty-des{
-  padding-right: 240px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-right: 210px;
+  padding-top: 21px;
+  padding-bottom: 21px;
  }
 
+ .level-des{
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 60px;
+ }
+ .student-container{
+  gap: 3rem;
+ }
+ .user-type{
+  gap:3rem
+ }
+
+ .member-button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ }
+ 
+ .member-button:hover{
+  background-color: #F47458;
+ }
+
+ .rep-button{
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+ }
+
+ .rep-button:hover{
+  background-color: #F47458;
+}
+.btn2{
+  margin-top: 30px;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+.image-logo{
+align-items: flex-start;
+justify-content: space-between;
+
+}
+.arrow{
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
 }

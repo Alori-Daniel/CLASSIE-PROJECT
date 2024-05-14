@@ -10,33 +10,131 @@
     />
     <link rel="stylesheet" href="../../../css/Login-Css/student/login.css" />
   </head>
+
   <body>
     <main>
+      <!-- <div>
+        <p style="color: black">
+          <img src="../../../images/arrow-left.png" /> back
+        </p>
+      </div> -->
       <div class="image-logo">
+        <div class="arrow">
+          <img src="../../../images/arrow-left.png" />
+          <p style="color: black">
+             Back
+          </p>
+        </div>
         <img src="../../../images/Frame 62.png" alt="" />
+      
+        <div>
+
+        </div>
+        <div>
+
+        </div>
       </div>
       <div class="container">
         <div class="welcome-container">
           <div class="sign-board">
-            <h3>Sign up</h3>
+            <h3>Input your Details</h3>
             <form>
               <label>Matric Number</label>
               <input type="text" placeholder="Enter your name" />
               <label name="faculty">Faculty</label>
-              <select placeholder="Select" name="faculty" id="faculty-des" class="faculty-des">
+              <select
+                placeholder="Select"
+                name="faculty"
+                id="faculty-des"
+                class="faculty-des"
+              >
+                <option>Select...</option>
+                <option>SCIENCE</option>
+                <option>ART</option>
+                <option>MEDCINE</option>
+                <option>ENGINEERING</option>
+              </select>
+
+              <div class="student-container">
+                <div class="student-info">
+                  <label name="deparment">Department</label>
+                  <select
+                    placeholder="Select"
+                    name="deparment"
+                    id="deparment-des"
+                    class="department-des"
+                  >
+                    <option>Select...</option>
+                    <option>MATHEMATICS</option>
+                    <option>PHYSICS</option>
+                    <option>MICROBIOLOGY</option>
+                    <option>GEOLOGY</option>
+                  </select>
+                </div>
+
+                <div class="student-info">
+                  <label name="deparment">Level</label>
+                  <select
+                    placeholder="Select"
+                    name="level"
+                    id="level-des"
+                    class="level-des"
+                  >
+                    <option>Select...</option>
+                    <option>100</option>
+                    <option>200</option>
+                    <option>300</option>
+                    <option>400</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- DEPATMENTS UNDER EACH FACULTY -->
+
+              <!-- <select placeholder="Select" name="deparment" id="deparment-des" class="department-des">
               <option>Select...</option>
-              <option>Science </option>
-              <option>Art </option>
-              <option>Business </option>
-              <option>Finance </option>
-              <option>Education </option>
+              <option>MUSIC</option>
+              <option>HISTORY</option>
+              <option>THEATRE ARTS</option>
+              <option>PHILSOPHY</option>
             </select>
-          </form>
+            <select placeholder="Select" name="deparment" id="deparment-des" class="department-des">
+              <option>Select...</option>
+              <option>PHYSIOTHERAPHY</option>
+              <option>PAEDIATRICS</option>
+              <option>SURGERY</option>
+              <option>BIOCHEMSITRY</option>
+            </select>
+            <select placeholder="Select" name="deparment" id="deparment-des" class="department-des">
+              <option>Select...</option>
+              <option>MECHANICAL</option>
+              <option>ELECTRICAL</option>
+              <option>INDUSTRIAL</option>
+            </select> -->
+              <div class="texty">
+                <p>Select User type</p>
+              </div>
+              <div class="user-type">
+                <div>
+                  <button class="rep-button">Course Rep</button>
+                </div>
+
+                <div>
+                  <button class="member-button">Course Member</button>
+                </div>
+              </div>
+
+              <button type="submit" class="btn2">
+                <a class="continue" href="../student/login-details.html"
+                  >Continue</a
+                >
+              </button>
+              <p>Already have an account? <a href="#">Log in</a></p>
+            </form>
           </div>
         </div>
       </div>
     </main>
-
 
     <script
       src="https://kit.fontawesome.com/8e4631de39.js"
