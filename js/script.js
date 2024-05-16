@@ -5,16 +5,41 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 const terms = document.getElementById('terms');
 
+
 let isSubmitting = false;
+
+
+fullName.addEventListener('input', e =>{
+    checkFullName();
+})
+
+email.addEventListener('input', e=>{
+    checkEmail();
+})
+
+password.addEventListener('input', e =>{
+    checkPassword();
+})
+
+password2.addEventListener('input', e =>{
+    checkPassword2();
+})
+
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
     
-    if (!isSubmitting){
-    validateInput();
-    }
-})
+    if(!isSubmitting){
+        if(validateForm()){
+            isSubmitting = true;
+            window.location.href = "../student/input-details.html";
+        }else{
+            isSubmitting = false;
+        }
+}
 
+   
+})
 
 
 const setError = (element, message) =>{
@@ -35,62 +60,89 @@ const setSuccess = element =>{
 }
 
 
-const validateInput = () =>{
-
-
+const checkFullName = () =>{
     const fullNameValue = fullName.value.trim();
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
-
-    let isValid = true;
-
 
     if(fullNameValue === ""){
-        setError (fullName, "Enter your Full Name");
-        isValid = false;
-
+        setError(fullName, "Enter your Full Name");
+        return false;
     }else{
-        setSuccess(fullName);
-    }
-
-    if(emailValue === ""){
-        setError(email, "Enter valid email");
-        isValid = false;
-    }else if (!validateEmail(emailValue)) {
-        setError(email, "Please enter a valid email address");
-        isValid = false;
-    }
-    else{
-        setSuccess(email);
-    }
-
-    if (passwordValue === "" || passwordValue.length < 8){
-        setError(password, "Enter your 8 digit password");
-        isValid = false;
-    }else{
-        setSuccess(password);
-    }
-
-    if(passwordValue !== password2Value){
-        setError(password2, "Passwords don't match");
-        isValid = false;
-    }else{
-        setSuccess(password2);
-    }
-
-    if(isValid){
-        isSubmitting = true;
-        window.location.href = "../student/input-details.html";
-        
-    } else{
-        isSubmitting = false;
-        
+        setSuccess(fullName)
+        return true;
     }
 }
 
+const checkEmail = () => {
+    const emailValue = email.value.trim();
+
+    if(emailValue === ""){
+        setError(email, "Enter valid email");
+        return false;
+
+    }else if (!validateEmail(emailValue)) {
+        setError(email, "Please enter a valid email address");
+        return false;
+
+    }
+    else{
+        setSuccess(email);
+        return true;
+    }
+}
+
+const checkPassword = () => {
+    const passwordValue = password.value.trim();
+
+    if (passwordValue === "" || passwordValue.length < 8){
+        setError(password, "Enter your 8 digit password");
+        return false;
+
+    }else{
+        setSuccess(password);
+        return true;
+    }
+
+}
+
+const checkPassword2 = () =>{
+    const passwordValue = password.value.trim();
+
+    const password2Value = password2.value.trim();
+
+    if(passwordValue !== password2Value){
+        setError(password2, "Passwords don't match");
+        return false;
+
+    }else{
+        setSuccess(password2);
+        return true;
+    }
+
+}
+
+
+const validateForm = () => {
+    const isFullNameValid = checkFullName();
+    const isEmailValid = checkEmail();
+    const isPasswordValid = checkPassword();
+    const isPassword2Valid = checkPassword2();
+
+   
+
+    
+
+    return isFullNameValid && isEmailValid && isPasswordValid && isPassword2Valid;
+}
+
+
+
+
 
 function validateEmail(mail) {
-             const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-           return re.test(mail);
-        }
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(mail);
+}
+
+
+
+
