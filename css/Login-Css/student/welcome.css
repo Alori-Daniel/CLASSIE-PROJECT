@@ -4,6 +4,15 @@
   background-color: var(--base);
 }
 
+body{
+  height: 100vh;
+}
+
+/* .container{
+  height: 100dvh;
+} */
+
+
 --root{
   --base:#f3f9fe;
   --blue:#355389;
@@ -84,17 +93,18 @@ p{
   padding-top: 10px;
 }
 #pref .btn1{
-  margin-bottom:30px ;
+  margin-bottom:20px ;
+ 
 
 }
 .welcome-container .user{
   text-align: center;
 }
 
-
+/* responsiveness for welcome and prefrence page */
 @media(max-width: 477px){
   .btn1{
-    padding: 15px 125px;
+    padding: 15px 120px;
     cursor: pointer;
   }
   .container{
@@ -142,9 +152,19 @@ p{
   .welcome-image{
     margin-bottom: 50px;
   }
-
+ 
 }
 
 
+@media(max-width: 900px){
+  .container{
+    width: 100%;
+  }
+   #pref{
+   display: flex;
+   flex-direction: column;
+  } 
 
+  
+}
 
