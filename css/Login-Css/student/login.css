@@ -358,3 +358,16 @@ place-content: center;
 
 }
 }
+ 
+
+/* JS CSS */
+
+.error{
+  color: #FBA834;
+  font-size: 13px;
+  transition: 2s ease-in;
+}
+
+.success{
+  border: 3px solid greenyellow;
+}
