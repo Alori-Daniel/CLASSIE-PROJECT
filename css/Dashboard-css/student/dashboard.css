@@ -58,21 +58,30 @@
 
     #header .navbar li{
         margin: 0 0.5rem;
+        
     }
+    body{
+        background-color:#f3f9fe;
+    }
+    
 
     #header{
         position: fixed;
         bottom: 0;
         padding-top: 1rem;
-        background-color: ghostwhite;
+        background-color: #FFFFFF;
+        outline: 1px solid #355389;
+        
     
     }
     #header .navbar li a{
         color: #355389;
         
+        
     }
     #header .navbar li i{
     color: #355389;
+    
         
     }
     

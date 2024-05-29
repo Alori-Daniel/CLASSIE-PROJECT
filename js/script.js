@@ -44,16 +44,21 @@ form.addEventListener('submit', e =>{
 
 const setError = (element, message) =>{
     const inputControl = element.nextElementSibling;
+    const internal = element;
+
+    internal.classList.remove('success');
 
     inputControl.textContent = message;
+
 }
 
 const setSuccess = element =>{
     const inputControl = element.nextElementSibling;
+    const internal = element;
 
-
+    internal.classList.add('success');
     inputControl.textContent = "";
-    inputControl.classList.remove('.error');
+    
 
 
    
@@ -142,6 +147,8 @@ function validateEmail(mail) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(mail);
 }
+
+
 
 
 
