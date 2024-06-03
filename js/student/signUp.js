@@ -6,9 +6,6 @@ const password2 = document.getElementById('password2');
 const terms = document.getElementById('terms');
 
 
-let isSubmitting = false;
-
-
 fullName.addEventListener('input', e =>{
     checkFullName();
 })
@@ -25,6 +22,20 @@ password2.addEventListener('input', e =>{
     checkPassword2();
 })
 
+const fullNameValue = fullName.value;
+const emailValue = email.value;
+const passwordValue = password.value;
+const password2Value = document.getElementById('password2').value;
+const termsValue = document.getElementById('terms').value;
+
+
+let isSubmitting 
+
+// const details = {
+//     password: 'passwordValue',
+//     email: 'emailValue',
+//     full_Name: 'fullNameValue',
+// }
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
@@ -32,7 +43,12 @@ form.addEventListener('submit', e =>{
     if(!isSubmitting){
         if(validateForm()){
             isSubmitting = true;
+            localStorage.setItem('fullName', fullNameValue);
+            localStorage.setItem('email', emailValue);
+            localStorage.setItem('password', passwordValue);
             window.location.href = "../student/input-details.html";
+
+            
         }else{
             isSubmitting = false;
         }
