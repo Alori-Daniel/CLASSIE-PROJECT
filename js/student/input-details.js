@@ -55,7 +55,7 @@ form.addEventListener('submit', e =>{
             // window.location.href = "../../Dashboard/Student/home.html";
 
 
-            fetch('http://127.0.0.1:8000/signup/student/', {
+            fetch('http://127.0.0.1:8000/signup/', {
                 headers: {
                     "Content-Type": "application/json"
                 },

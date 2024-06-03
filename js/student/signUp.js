@@ -31,11 +31,16 @@ const termsValue = document.getElementById('terms').value;
 
 let isSubmitting 
 
-// const details = {
-//     password: 'passwordValue',
-//     email: 'emailValue',
-//     full_Name: 'fullNameValue',
-// }
+const details = {
+    full_name: "Road Charles",
+    email: "roadmile@gmail.com",
+    password: "pass12333",
+    matric_no: '1992',
+    faculty: 'art',
+    department: 'csc',
+    year: '200',
+    type: 'student'
+};
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
@@ -43,10 +48,25 @@ form.addEventListener('submit', e =>{
     if(!isSubmitting){
         if(validateForm()){
             isSubmitting = true;
-            localStorage.setItem('fullName', fullNameValue);
-            localStorage.setItem('email', emailValue);
-            localStorage.setItem('password', passwordValue);
-            window.location.href = "../student/input-details.html";
+            // localStorage.setItem('fullName', fullNameValue);
+            // localStorage.setItem('email', emailValue);
+            // localStorage.setItem('password', passwordValue);
+            // window.location.href = "../student/input-details.html";
+
+
+             fetch('http://127.0.0.1:8000/signup/student/', details,
+            {
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                method: 'POST',
+            }
+                
+            ).then(res => {
+                return res.json()
+            })
+            .then(data => console.log(data))
+            .catch(error => console.error('ERROR'))
 
             
         }else{
