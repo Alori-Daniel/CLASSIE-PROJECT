@@ -227,7 +227,6 @@ a{
   .rep-button:hover{
     background-color: #F47458;
   }
-
   .member-button{
     border: none;
     border-radius: 7px;
@@ -242,7 +241,18 @@ a{
     cursor: pointer;
     outline: 1px solid white;
   }
+  .selected{
+    background-color: #F47458;
+  }
 
+  .selected1{
+    background-color: #F47458;
+    
+  }
+
+ 
+
+ 
   .member-button:hover{
     background-color: #F47458;
   }
@@ -369,5 +379,5 @@ place-content: center;
 }
 
 .success{
-  border: 3px solid greenyellow;
+  border: 2px solid #FF9F66;
 }

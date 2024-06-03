@@ -33,11 +33,12 @@
         <div class="welcome-container">
           <div class="sign-board">
             <h3>Input your Details</h3>
-            <form>
+            <form id="form">
               <label>Matric Number</label>
-              <input type="text" placeholder="" />
+              <input type="text" id="matric" placeholder="" />
+              <div class="error"></div>
               <label name="faculty">Faculty</label>
-              <select
+              <select style="color: black;"
                 placeholder="Select"
                 name="faculty"
                 id="faculty-des"
@@ -53,7 +54,7 @@
               <div class="student-container">
                 <div class="student-info">
                   <label name="deparment">Department</label>
-                  <select
+                  <select style="color: black;"
                     placeholder="Select"
                     name="deparment"
                     id="deparment-des"
@@ -69,7 +70,7 @@
 
                 <div class="student-info">
                   <label name="deparment">Level</label>
-                  <select
+                  <select style="color: black;"
                     placeholder="Select"
                     name="level"
                     id="level-des"
@@ -111,18 +112,18 @@
               </div>
               <div class="user-type">
                 <div>
-                  <button class="rep-button">Course Rep</button>
+                  <button class="rep-button" id="rep">Course Rep</button>
                 </div>
 
                 <div>
-                  <button class="member-button">Course Member</button>
+                  <button class="member-button" id="member">Course Member</button>
                 </div>
               </div>
 
               <button type="submit" class="btn2">
-                <a class="continue" href="../student/login-details.html\"
-                  >Continue</a
-                >
+                
+                  <span class="continue">Continue</span>
+                
               </button>
               <p>Already have an account? <a href=".//login-page.html">Log in</a></p>
             </form>
@@ -135,6 +136,9 @@
       src="https://kit.fontawesome.com/8e4631de39.js"
       crossorigin="anonymous"
     ></script>
+    
     <!-- IMPORTING LOGO FROM FONT AWESOME-->
+
+    <script src="../../../js/student/input-details.js"></script>
   </body>
 </html>
