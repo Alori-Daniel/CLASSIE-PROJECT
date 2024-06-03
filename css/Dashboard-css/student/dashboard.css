@@ -6,7 +6,7 @@
 
 #header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 2rem;
     width: 100%;
     padding-bottom: 0.2rem;
@@ -14,6 +14,8 @@
 }
 #header .navbar{
     display: flex;
+    padding-bottom:10px;
+    gap: 0.5rem;
 }
 
 #header .navbar li{
@@ -23,6 +25,7 @@
     margin: 0 1.5rem;
     list-style: none;
     position: relative;
+    
 }
 
 #header .navbar li a{
@@ -53,6 +56,15 @@
     position: absolute;
 }
 
+.logo {
+   
+    text-align: left;
+}
+.logo img{
+    width:150px;
+    text-align: left;
+}
+
 
 @media(max-width:477px){
 
@@ -71,19 +83,29 @@
         padding-top: 1rem;
         background-color: #FFFFFF;
         outline: 1px solid #355389;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 100%;
         
     
     }
+
     #header .navbar li a{
         color: #355389;
+        font-family: poppins;
+        font-size: 13px;
+        
         
         
     }
     #header .navbar li i{
-    color: #355389;
-    
+    color: #355389;    
         
     }
-    
 
+    .logo img{
+        display: none;
+    }
+
+   
 }
