@@ -58,9 +58,36 @@ form{
   /* width: 400px; */
   margin: 0 auto;
   padding: 10px 20px;
+
   /* background-color: #355389; */
   
 }
+@keyframes slideinLeft{
+  from{
+    transform: translateX(-20px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.sign-board1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  /* width: 400px; */
+  margin: 0 auto;
+  padding: 10px 20px;
+  /* background-color: #355389; */
+  animation: slideinLeft 1s ease-in 0s 1 normal none;
+
+  
+}
+
+.visible{
+  display: none;
+}
+
 input{
   /* padding: 15px 70px; */
   padding-top: 18px;
