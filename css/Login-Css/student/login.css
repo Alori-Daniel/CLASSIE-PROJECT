@@ -395,6 +395,16 @@ place-content: center;
 
 }
 }
+
+.pass{
+  position: relative;
+}
+.toggle-pass{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  order: 5;
+}
  
 
 /* JS CSS */

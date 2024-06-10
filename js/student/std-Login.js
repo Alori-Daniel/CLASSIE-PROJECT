@@ -1,6 +1,7 @@
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const form = document.getElementById('form');
+const toggle = document.getElementById('toggle');
 
 
 
@@ -105,3 +106,8 @@ const validateForm = () =>{
     return isEmailValid;
 }
 
+
+toggle.addEventListener('click', e =>{
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+})
