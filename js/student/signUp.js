@@ -27,42 +27,11 @@ password2.addEventListener('input', e =>{
 
 let isSubmitting = false;
 
-// const details = {
-//     "full_name": "Toad Davis",
-//     "email": "coldstaff@gmail.com",
-//     "password": "pass12333",
-//     "matric_no": "2999",
-//     "faculty": "Science",
-//     "department": "csc",
-//     "year": "400",
-//     "type": "student"
-// };
-
 
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
 
-// const fullNameValue = fullName.value;
-// const emailValue = email.value;
-// const passwordValue = password.value;
-// const password2Value = document.getElementById('password2').value;
-
-// const details = {
-//     full_name: fullNameValue,
-//     email: emailValue,
-//     password: passwordValue,
-//     matric_no: "2232",
-//     faculty: "Science",
-//     department: "csc",
-//     year: "400",
-//     type: "student"
-// };
-
-// console.log('Full Name:', fullNameValue);
-//         console.log('Email:', emailValue);
-//         console.log('Password:', passwordValue);
-//         console.log('Confirm Password:', password2Value);
     
     if(!isSubmitting){
         if(validateForm()){
@@ -70,12 +39,6 @@ form.addEventListener('submit', e =>{
 
             signBoard.classList.add('visible');
             signBoard1.classList.remove('visible');
-
-            // localStorage.setItem('fullName', fullNameValue);
-            // localStorage.setItem('email', emailValue);
-            // localStorage.setItem('password', passwordValue);
-
-            // window.location.href = "../student/input-details.html";
 
             
         }else{
@@ -279,7 +242,7 @@ form2.addEventListener('submit', e =>{
                     window.location.href = "../../Dashboard/Student/home.html";
                
             })
-            .catch(error => console.error('ERROR'))
+            .catch(error => console.error('error:' , error));
 
             // .then(res => res.json())
             

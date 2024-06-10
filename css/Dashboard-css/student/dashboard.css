@@ -52,7 +52,7 @@ body{
 .search{
     padding-left: 25px;
     margin-left: 5px;
-    padding-right: 103px;
+    padding-right: 90px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
@@ -68,22 +68,28 @@ body{
 }
 
 .student-bar{
-    display: grid;
-    gap: 1rem;
-    padding-left: 30px;
+    /* display: grid; */
+    gap: 3rem;
+    /* padding-left: 30px; */
     padding-top: 30px;
+    /* border: 1px solid red; */
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;  
+    align-items: start;
     
+
 }
 
 .student-bar a{
     text-decoration: none;
     /* border:1px solid red */
-    display: flex;
-    gap: 1rem;
     font-family: poppins;
     color:#000000;
     font-size: 14px;
     align-items: center;
+    /* border: 1px solid yellow; */
+    /* padding: 30px; */
     
 }
 
@@ -91,15 +97,10 @@ body{
     color: rebeccapurple;
 }
 
-.student-bar{
-    /* border:1px solid red; */
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+
 .student-bar i{
     color: #355389;
+    padding-right: 0.5rem;
 
 }
 

@@ -1,6 +1,7 @@
-const matricNumber = document.getElementById('matric');
+const email = document.getElementById('email');
 const password = document.getElementById('password');
 const form = document.getElementById('form');
+const toggle = document.getElementById('toggle');
 
 
 
@@ -10,44 +11,103 @@ password.addEventListener('input', e => {
 })
 
 
-matricNumber.addEventListener('input', e =>{
-    checkMatricNumber();
-
+email.addEventListener('input', e=>{
+    checkEmail();
 })
+
 
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
 
-    window.location.href = "../../Dashboard/Student/home.html";
+    emailValue = email.value;
+    passwordValue = password.value;
+
+    const details ={
+        email: emailValue,
+        password: passwordValue
+    }
+
+    fetch("http://127.0.0.1:8000/auth/login/",
+        {
+            headers:{
+                "Content-Type": "application/json"
+            },
+            method: 'POST',
+            body: JSON.stringify(details)
+        }
+    )
+    .then(response => {
+        // console.log("The response", response);
+        return response.json();
+        
+    }).then(data => {
+
+        console.log("Response data: ", data);
+        if(data.success){
+         window.location.href = "../../Dashboard/Student/home.html";
+        }else{
+            alert('Registration failed: ');
+        }
+        
+        
+       
+    })
+    .catch(error => console.error('error:' , error));
+
 
 })
 
 
-const checkMatricNumber = () =>{
-    var checkMatric = /^[0-9]{2}[a-zA-Z]{2}[0-9]{6}$/gi;
-
-    if (checkMatric.test(matricNumber.value)) {
-        console.log(matricNumber.value.match(checkMatric));
-        matricNumber.nextElementSibling.textContent = "";
-        return true
-    } else {
-        matricNumber.nextElementSibling.textContent = "Invalid Matric Number";
-        return false
-    }
-    
+function validateEmail(mail) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(mail);
 }
+
+const checkEmail = () => {
+    const emailValue = email.value.trim();
+
+    if(emailValue === ""){
+        email.nextElementSibling.textContent = "Enter email address";
+        return false;
+
+    }else if (!validateEmail(emailValue)) {
+        email.nextElementSibling.textContent = "Enter a valid email address";
+        return false;
+
+    }
+    else{
+        email.nextElementSibling.textContent = "";
+        return true;
+    }
+}
+
+
+
 
 const checkPassword = () => {
     const passwordValue = password.value.trim();
 
-    if (passwordValue === "" || passwordValue.length < 8){
-        setError(password, "Enter your 8 digit password");
+    if (passwordValue === "" ){
+        password.nextElementSibling.textContent = "Input Password";
         return false;
 
     }else{
-        setSuccess(password);
+        password.nextElementSibling.textContent = "";
+
         return true;
     }
 
 }
+
+const validateForm = () =>{
+    const isEmailValid = checkEmail();
+
+    return isEmailValid;
+}
+
+
+toggle.addEventListener('click', e =>{
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+})
