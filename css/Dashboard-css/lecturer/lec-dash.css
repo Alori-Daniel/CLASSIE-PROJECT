@@ -78,6 +78,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .left-content {
@@ -88,6 +89,7 @@
 .left-content h2 {
     margin: 0 0 10px 0;
     font-size: 24px;
+   
 }
 .left-content p {
     margin: 5px 0;
