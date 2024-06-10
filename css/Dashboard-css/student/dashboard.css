@@ -3,87 +3,103 @@
     padding: 0;
 }
 
-
-#header{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    width: 100%;
-    padding-bottom: 0.2rem;
-    background-color: #355389;
-}
-#header .navbar{
-    display: flex;
+body{
+    background-color: #f8fbfe;
 }
 
-#header .navbar li{
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    
+}
+
+.welcome-header{
+    padding-left: 20px;
+}
+
+
+.welcome-header h2{
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.help{
+    /* border: 1px solid red; */
+    display: flex;
+    gap:1.5rem;
+    padding-right:45px;
+    align-items: center;
+}
+.help a{
+    color:#355389
+}
+.info{
+    background-color:#FFFFFF;
+     height: 100vh; 
+     float: left; 
+     width: 285px;
+}
+
+.logo-image {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.search{
+    padding-left: 25px;
+    margin-left: 5px;
+    padding-right: 103px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-top: 50px;
+    border: 0.5px;
+    background-color:#D9D9D9
+
+}
+
+.search::placeholder{
+   
+    font-family: poppins;
+}
+
+.student-bar{
+    display: grid;
+    gap: 1rem;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+}
+
+.student-bar a{
+    text-decoration: none;
+    /* border:1px solid red */
+    display: flex;
+    gap: 1rem;
+    font-family: poppins;
+    color:#000000;
+    font-size: 14px;
+    align-items: center;
+    
+}
+
+.student-bar a:hover{
+    color: rebeccapurple;
+}
+
+.student-bar{
+    /* border:1px solid red; */
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 1.5rem;
-    list-style: none;
-    position: relative;
+    gap: 2rem;
 }
-
-#header .navbar li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 400;
-}
-#header .navbar li i{
-    font-weight: 700;
-    font-size: 25px;
-    color: #FFFFFF;
-    padding-bottom: 3px;
-}
-
-#header .navbar li a:hover{
-    color: aliceblue;
-    /* text-decoration: underline; */
-}
-
-#header .navbar li a.active::after,
-#header .navbar li a:hover::after{
-    content: "";
-    bottom: -2px;
-    left: 2px;
-    width: 100%;
-    background: #FFFFFF;
-    height: 2px;
-    position: absolute;
-}
-
-
-@media(max-width:477px){
-
-    #header .navbar li{
-        margin: 0 0.5rem;
-        
-    }
-    body{
-        background-color:#f3f9fe;
-    }
-    
-
-    #header{
-        position: fixed;
-        bottom: 0;
-        padding-top: 1rem;
-        background-color: #FFFFFF;
-        outline: 1px solid #355389;
-        
-    
-    }
-    #header .navbar li a{
-        color: #355389;
-        
-        
-    }
-    #header .navbar li i{
+.student-bar i{
     color: #355389;
-    
-        
-    }
-    
 
 }
+
