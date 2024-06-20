@@ -1,44 +1,51 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #f8fbfe;
 }
 
-.head{
+.head {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    
+
 }
 
-.welcome-header{
+.welcome-header {
     padding-left: 20px;
 }
 
 
-.welcome-header h2{
+.welcome-header h2 {
     font-family: poppins;
     font-weight: 500;
+
+    padding-left: 10px;
 }
 
-.help{
+.help {
     /* border: 1px solid red; */
     display: flex;
-    gap:1.5rem;
-    padding-right:45px;
+    gap: 1.5rem;
+    padding-right: 45px;
     align-items: center;
 }
-.help a{
-    color:#355389
+
+.help a {
+    color: #355389
 }
-.info{
-    background-color:#FFFFFF;
-     height: 100vh; 
-     float: left; 
-     width: 285px;
+
+.info {
+    background-color: #FFFFFF;
+    height: 100vh;
+    float: left;
+    width: 285px;
+    /* position: */
+
+
 }
 
 .logo-image {
@@ -49,58 +56,393 @@ body{
     padding-top: 50px;
 }
 
-.search{
+.search {
     padding-left: 25px;
     margin-left: 5px;
     padding-right: 90px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 8px;
     margin-top: 50px;
     border: 0.5px;
-    background-color:#D9D9D9
-
+    background-color: #D9D9D9
 }
 
-.search::placeholder{
-   
+.search::placeholder {
+
     font-family: poppins;
 }
 
-.student-bar{
-    /* display: grid; */
+.student-bar {
     gap: 3rem;
-    /* padding-left: 30px; */
     padding-top: 30px;
-    /* border: 1px solid red; */
     padding-left: 50px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: start;
-    
+
+
 
 }
 
-.student-bar a{
+.student-bar a {
     text-decoration: none;
-    /* border:1px solid red */
     font-family: poppins;
-    color:#000000;
+    color: #000000;
     font-size: 14px;
     align-items: center;
     /* border: 1px solid yellow; */
     /* padding: 30px; */
-    
+
 }
 
-.student-bar a:hover{
+.student-bar a:hover {
     color: rebeccapurple;
 }
 
 
-.student-bar i{
+.student-bar i {
     color: #355389;
     padding-right: 0.5rem;
 
 }
 
+.ongoing {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 78px;
+    padding-left: 25px;
+
+}
+
+.ongoing h3 {
+    font-family: poppins;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.class-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 13rem;
+    position: relative;
+
+    padding: 1rem 1rem 3.5rem 1rem;
+
+    margin-top: 0.5rem;
+
+}
+
+.ongoing-class-info {
+    background-color: #F47458;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 5rem;
+    height: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: poppins;
+    padding: 0.2rem 0;
+    font-size: 10px;
+
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details a {
+    margin-right: 0.2rem;
+    color: #184655;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+.subject {
+    margin-top: 10px;
+    /* margin-left: 20px; */
+}
+
+.subject span {
+    color: grey;
+    font-family: poppins;
+    padding-right: 5px;
+
+}
+
+.subject h4 {
+    font-family: poppins;
+    color: #184655;
+}
+
+.class-location {
+    margin-top: 18px;
+    /* border: 1px solid red; */
+    display: grid;
+    gap: 0.1rem;
+
+
+}
+
+.class-text {
+    font-family: poppins;
+    font-size: 12px;
+    color: #355389;
+}
+
+.upcoming-class {
+    background-color: #355389;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    height: 5rem;
+
+    padding: 18px;
+    margin-top: 0.5rem;
+
+
+}
+
+.upcoming-info {
+    background-color: #F47458;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 5rem;
+    height: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: poppins;
+    padding: 0.2rem 0;
+    font-size: 10px;
+    border: 1px solid yellow;
+
+}
+
+.next {
+    display: flex;
+    gap: 3rem;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+span {
+    color: #FFFFFF;
+    font-family: poppins;
+    font-weight: 500;
+    padding-right: 5px;
+}
+
+.next h5 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: poppins;
+
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.new-class-location {
+    font-family: poppins;
+    color: #FFFFFF;
+    font-size: 12px;
+    /* padding: 0 1rem; */
+
+}
+
+.search-container {
+    margin-top: 1.5rem;
+    font-family: poppins;
+    font-size: 20px;
+}
+
+.search-container i {
+    font-size: large;
+    padding-left: 5px;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #d3d3d3;
+    font-size: 16px;
+    /* color: #757575; */
+    font-family: poppins;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* announcemnt */
+
+.announcement-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+
+    position: relative;
+
+
+    padding: 1rem 1rem 1rem 1rem;
+
+    margin-top: 0.5rem;
+}
+
+.announcement-details h4 {
+    font-family: poppins;
+    color: #3C8F7C;
+    font-size: 16px;
+}
+
+.announcement-head {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.announcement-details .date {
+    font-family: poppins;
+    color: #757575;
+    font-size: small;
+}
+
+.announcement-course {
+    display: block;
+
+
+}
+
+.announcement-course p {
+    padding-left: 12px;
+    font-family: poppins;
+    color: #3C8F7C;
+    font-size: 16px;
+
+}
+
+.announcement-course span {
+    color: #757575;
+    font-family: poppins;
+    font-size: 14px;
+}
+
+.update-announcement {}
+
+.update-text {
+    font-family: poppins;
+    color: #355389;
+    padding-bottom: 7px;
+}
+
+.update-announcement .message {
+    font-family: poppins;
+    color: #355389;
+    padding: 0.3rem 0;
+    font-size: 15px;
+    font-weight: 500;
+    border-top: 2px solid #757575;
+    padding-top: 5px;
+
+}
+
+.text {
+    color: #000000;
+    font-family: poppins;
+    /* padding: 0rem  10rem 0 0; */
+    border-bottom: 1px solid #757575;
+    padding-bottom: 13px;
+
+}
+
+.update-announcement .new-message {
+    font-family: poppins;
+    color: #355389;
+    padding: 0.3rem 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.update-announcement .new-text {
+    color: #000000;
+    font-family: poppins;
+    /* padding: 0rem  10rem 0 0; */
+    /* padding-bottom: 20px; */
+}
+
+.comment-section {
+    display: flex;
+    /* gap: 2rem; */
+    justify-content: space-between;
+    padding: 1.7rem 1rem 1rem 1rem;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.comment-bar {
+    padding: 0.5rem 27rem 0.5rem 0.8rem;
+    border-radius: 8px;
+    color: #355389;
+    border: 1px solid #355389;
+}
+
+.comment-section a {
+    color: #F47458;
+    font-family: poppins;
+    font-size: 13px;
+}
+
+.comment-bar::placeholder {
+    color: #355389;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 8rem;
+    position: relative;
+
+    padding: 1rem 1rem 3.5rem 1rem;
+
+    margin-top: 1.7rem;
+}
+
+.sub-menu-wrap {
+    /* position: absolute; */
+    /* top: 100%;
+    right: 10%; */
+
+
+}
+ 
+.sub-menu{
+    background: #FFF;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* responsivenes  for mobile view*/
+
+@media (max-width: 480px) {
+    .info {
+        display: none;
+    }
+
+}
