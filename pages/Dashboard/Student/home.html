@@ -17,7 +17,7 @@
 
   <div class="info">
     <div class="logo-image">
-      <img src="../../../images/Frame 2492.png">
+      <a><img src="../../../images/Frame 2492.png"></a>
     </div>
     <div>
       <input type="search" class="search" placeholder="search...">
@@ -38,23 +38,44 @@
     </div>
 
     <div class="help">
-      <div style="background-color: red; position: relative;">
-      <img src="../../../images/Ellipse 12.png">
-      <!-- HERE WORK FROM HERE USE POSITIONING -->
-      <div class="sub-menu-wrap">
-        <div class="sub-menu">       
-          <div class="user-info">
-            <img src="../../../images/Ellipse 12.png">
-            <h2>Daniel James</h2>
-          </div>
-        </div>
-      </div>
-    </div>   <!--THIS THE END OF DIV.... YOU SHOULD GET THE CONCEPT FROM HERE-->
+
+      <img src="../../../images/Ellipse 12.png" onclick="togglemenu()">
+
       <a href=""><i class="fa-regular fa-comment"></i></a>
       <a href=""><i class="fa-regular fa-bell"></i></a>
     </div>
   </div>
- 
+
+
+  <div class="sub-menu-wrap" id="subMenu">
+    <div class="sub-menu">
+      <div class="user-info">
+        <img src="../../../images/Ellipse 12.png">
+        <h3>Daniel James</h3>
+      </div>
+      <hr>
+
+      <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-user"></i>
+        <p>Edit profile</p>
+        <span>></span>
+      </a>
+
+      <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-gear"></i>
+        <p>Settings</p>
+        <span>></span>
+      </a>
+
+      <a href="../../Login/student/login-page.html" class="sub-menu-link">
+        <i class="fa-solid fa-door-open"></i>
+        <p>Logout</p>
+        <span>></span>
+      </a>
+
+    </div>
+  </div>
+
 
   <div class="ongoing">
     <h3>
@@ -76,7 +97,7 @@
 
       <div class="class-location">
         <p class="class-text">Engineering Building - E202</p>
-        <p  class="class-text">4:00PM</p>
+        <p class="class-text">4:00PM</p>
       </div>
 
       <div class="upcoming-class">
@@ -106,7 +127,7 @@
     <div class="announcement-card">
       <div class="announcement-head">
         <div class="announcement-details">
-          <h4> Announcement  </h4>  
+          <h4> Announcement </h4>
           <p class="date">20/6/2023</p>
         </div>
 
@@ -115,36 +136,38 @@
           <span>COSC 402</span>
         </div>
       </div>
-      
+
       <div class="update-announcement">
         <p class="update-text">
-          Dr. Johnson said there will be a quiz on Friday. Please prepare. It is going to be from what he taught us last class. Abeg make una try come. You know he will definitely add it to our CA.
+          Dr. Johnson said there will be a quiz on Friday. Please prepare. It is going to be from what he taught us last
+          class. Abeg make una try come. You know he will definitely add it to our CA.
         </p>
 
         <h5 class="message">Emmanuel Ak-prime</h5>
-        <p class="text">Omo why na when person no dey school this mane dey put quiz. Please course rep help me inform him</p>
+        <p class="text">Omo why na when person no dey school this mane dey put quiz. Please course rep help me inform
+          him</p>
 
         <h5 class="new-message">Demilade API Boss</h5>
         <p class="new-text">Omo I don set appointment with my babe for friday. Make he carry him quiz dey go.</p>
-      
+
       </div>
-      
+
 
       <div class="comment-section">
-        <div style="display: flex; justify-content: center; gap: 1rem;">   
-          <img src="../../../images/Ellipse 2.png" >
+        <div style="display: flex; justify-content: center; gap: 1rem;">
+          <img src="../../../images/Ellipse 2.png">
           <input type="text" class="comment-bar" placeholder="Add comment">
         </div>
-        <div> 
+        <div>
           <a href="">View more</a>
         </div>
-      </div>  
+      </div>
     </div>
 
     <div class="course-card">
       <div class="announcement-head">
         <div class="announcement-details">
-          <h4> Course Material </h4>  
+          <h4> Course Material </h4>
           <p class="date">20/6/2023</p>
         </div>
 
@@ -152,17 +175,23 @@
           <p>Course</p>
           <span>COSC 402</span>
         </div>
+      </div>
+
+
     </div>
 
 
-  </div>
 
 
+    <script>
+      let subMenu = document.getElementById("subMenu")
 
+      function togglemenu() {
+        subMenu.classList.toggle("open-menu");
+      }
+    </script>
 
-
-
-  <script src="https://kit.fontawesome.com/8e4631de39.js" crossorigin="anonymous"></script>
-  <!-- IMPORTING LOGO FROM FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/8e4631de39.js" crossorigin="anonymous"></script>
+    <!-- IMPORTING LOGO FROM FONT AWESOME-->
 
 </body>
