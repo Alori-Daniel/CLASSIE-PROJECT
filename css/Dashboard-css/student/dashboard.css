@@ -35,7 +35,9 @@ body {
 }
 
 .help a {
-    color: #355389
+    color: #355389;
+    cursor: pointer;
+
 }
 
 .info {
@@ -311,6 +313,7 @@ span {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
+    
 }
 
 .announcement-details .date {
@@ -321,6 +324,7 @@ span {
 
 .announcement-course {
     display: block;
+    /* border: 1px solid red; */
 
 
 }
@@ -339,7 +343,7 @@ span {
     font-size: 14px;
 }
 
-.update-announcement {}
+/* .update-announcement {} */
 
 .update-text {
     font-family: poppins;
@@ -422,6 +426,7 @@ span {
     padding: 1rem 1rem 3.5rem 1rem;
 
     margin-top: 1.7rem;
+    /*  */
 }
 
 .sub-menu-wrap {
@@ -512,7 +517,124 @@ span {
     font-weight: 600;
 }
 
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color:#355389;
+    border-radius: 50%; 
+    /* border: 1px solid red; */
+    display: flex;
 
+}
+
+.circle i{
+    flex-direction: column;
+    font-size: 28px;
+    margin: 0 auto;
+    justify-content:center ;
+    align-self: center;
+    
+
+
+}
+
+.file-download{
+    display: flex;
+    margin-top: 20px;
+    gap: 1.5rem;
+    /* border: 1px solid red; */
+
+   
+}
+
+.download-button{
+  
+    padding: 15px 15px 14px 10px;
+    background-color: #355389;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.assignment-announcement p{
+    font-family: poppins;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid #757575;
+    
+}
+
+.due{
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.due h4{
+    font-family: poppins;
+    color: #3C8F7C;
+    font-size: 16px;
+}
+
+.assignment-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 8rem;
+    position: relative;
+
+    padding: 1rem 1rem 7rem 1rem;
+
+    margin-top: 1.7rem;
+}
+
+.due .date{
+    font-family: poppins;
+    color: #757575;
+    font-size: small;
+}
+
+
+.button-group input{
+    display: none;
+}
+
+.button-group label{
+    cursor: pointer;
+    display:block;
+    /* color: #355389; */
+    padding: 10px 20px 14px 10px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* margin: 10px 0px; */
+    transition: all 0.3s ease;
+    background-color:#355389;
+    /* border: none; */
+    
+
+}
+
+.button-group label i{
+    /* border: 1px solid red; */
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.download-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 8rem;
+    position: relative;
+
+    padding: 1rem 1rem 20rem 1rem;
+
+    margin-top: 1.7rem;
+   
+}
 
 
 /* responsivenes  for mobile view*/
@@ -523,3 +645,4 @@ span {
     }
 
 }
+
