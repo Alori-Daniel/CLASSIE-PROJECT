@@ -219,7 +219,7 @@ form2.addEventListener('submit', e =>{
         type: roleValue
     };
 
-
+    console.log(details)
     if(!isSubmitting1){
         if(validateForm1()){
             isSubmitting = true;
@@ -237,9 +237,12 @@ form2.addEventListener('submit', e =>{
             .then(res => {
                 return res.json()
             })
-            .then(data => { console.log(data);
-               
+            .then(data => {
+                
+                    localStorage.setItem('data_got', JSON.stringify(data))
                     window.location.href = "../../Dashboard/Student/home.html";
+
+
                
             })
             .catch(error => console.error('error:' , error));
@@ -333,7 +336,7 @@ department.addEventListener('change', e =>{
     
     
 const checkMatricNumber = () =>{
-    var checkMatric = /^[0-9]{2}[a-zA-Z]{2}[0-9]{6}$/gi;
+    var checkMatric = /^[0-9]{2}\/[a-zA-Z]{4}[0-9]{2}$/gi;
 
     if (checkMatric.test(matricNumber.value)) {
         console.log(matricNumber.value.match(checkMatric));

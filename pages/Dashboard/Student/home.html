@@ -32,7 +32,7 @@
 
   <div class="head">
     <div class="welcome-header">
-      <h2>
+      <h2 id="greeting">
         Good Morning, Daniel
       </h2>
     </div>
@@ -49,7 +49,7 @@
     <div class="sub-menu">
       <div class="user-info">
         <img src="../../../images/Ellipse 12.png">
-        <h3>Daniel James</h3>
+        <h3 id="popup-name">Daniel James</h3>
       </div>
       <hr>
 
@@ -65,11 +65,11 @@
         <span>></span>
       </a>
 
-      <a href="../../Login/student/login-page.html" class="sub-menu-link">
+      <button type="submit" id="logout-btn" onclick=logout() class="sub-menu-link">
         <i class="fa-solid fa-door-open"></i>
         <p>Logout</p>
         <span>></span>
-      </a>
+      </button>
 
     </div>
   </div>
@@ -127,17 +127,17 @@
       <div class="announcement-head">
         <div class="announcement-details">
           <h4> Announcement </h4>
-          <p class="date">20/6/2023</p>
+          <p id="ann-date" class="date">20/6/2023</p>
         </div>
 
         <div class="announcement-course">
           <p>Course</p>
-          <span>COSC 302</span>
+          <span id="course-ann">COSC203</span>
         </div>
       </div>
 
       <div class="update-announcement">
-        <p class="update-text">
+        <p id="announcement-para" class="update-text">
           Dr. Johnson said there will be a quiz on Friday. Please prepare. It is going to be from what he taught us last
           class. Abeg make una try come. You know he will definitely add it to our CA.
         </p>
@@ -227,7 +227,7 @@
             <p id="up-para"
               style="margin-right: auto; text-align: center; padding-left: 20px; font-family: poppins; color: 010712; font-size: 15px;">
               Upload</p>
-  
+
             <button class="upload-button">
               <label for="input1"><i class="fa-solid fa-upload"></i></label>
               <input type="file" name="" id="input1">
@@ -239,7 +239,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="download-card">
       <div class="announcement-head">
         <div class="announcement-details">
@@ -289,7 +289,7 @@
             </a>
           </button>
         </div>
-      </div>   
+      </div>
 
       <div class="file-download">
         <div class="circle">
@@ -323,30 +323,11 @@
             </a>
           </button>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 
-  <script>
-    let subMenu = document.getElementById("subMenu")
-
-    function togglemenu() {
-      subMenu.classList.toggle("open-menu");
-
-    }
-    const para = document.getElementById('up-para')
-    const upload = document.getElementById('input1');
-    console.log(upload.textContent);
-    upload.addEventListener('change', e => {
-      // console.log("hello")
-      // uploadValue = upload.textContent
-      // console.log(uploadValue);
-      console.log(upload.value);
-
-      para.innerHTML = upload.value;
-
-    })
-
+  <script src="../../../js/student/home.js">
   </script>
 
   <script src="https://kit.fontawesome.com/8e4631de39.js" crossorigin="anonymous">
