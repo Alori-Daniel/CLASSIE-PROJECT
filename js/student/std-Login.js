@@ -39,18 +39,18 @@ form.addEventListener('submit', e =>{
     )
     .then(response => {
         // console.log("The response", response);
-        return response.json();
+            return response.json();
         
     }).then(data => {
 
-        console.log("Response data: ", data);
-        if(data.success){
-         window.location.href = "../../Dashboard/Student/home.html";
+        // console.log("Response data: ", data);
+        if(data.status === "200"){
+            console.log(data)
+            localStorage.setItem('data_got', JSON.stringify(data))
+            window.location.href = "../../Dashboard/Student/home.html";        
         }else{
-            alert('Registration failed: ');
+            alert("Registration Failed")
         }
-        
-        
        
     })
     .catch(error => console.error('error:' , error));
