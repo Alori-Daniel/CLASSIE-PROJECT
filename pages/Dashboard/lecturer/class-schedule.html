@@ -14,13 +14,13 @@
 </head>
 
 <body>
-
+  <div class="container">
   <div class="info">
     <div class="logo-image">
       <img src="../../../images/Frame 2492.png">
     </div>
-    <div>
-      <input type="search" class="search" placeholder="search...">
+    <div class="searchbar">
+      <input type="search" class="search" placeholder="Search...">
     </div>
     <div class="student-bar">
       <a href=""><i class="fa-solid fa-house"></i>Home</a>
@@ -29,60 +29,149 @@
       <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
     </div>
   </div>
-
-  <div class="head">
-    <div class="welcome-header">
-      <h2>
-        Good Morning, Adeyemi
-      </h2>
-      
-    </div>
-
-    <div class="help">
-      <a><img src="../../../images/Ellipse 12.png" onclick="togglemenu()"></a>
-      <a href=""><i class="fa-regular fa-comment"></i></a>
-      <a href=""><i class="fa-regular fa-bell"></i></a>
-    </div>
-  </div>
-
-
-  <div class="sub-menu-wrap" id="subMenu">
-    <div class="sub-menu">
-      <div class="user-info">
-        <img src="../../../images/Ellipse 12.png">
-        <h3>Daniel James</h3>
+  <div class="content">
+    <div class="head">
+      <div class="welcome-header">
+        <h2>
+          Good Morning, Adeyemi
+        </h2>
+        
       </div>
-      <hr>
 
-      <a href="#" class="sub-menu-link">
-        <i class="fa-solid fa-user"></i>
-        <p>Edit profile</p>
-        <span>></span>
-      </a>
+      <div class="help">
+        <a><img src="../../../images/Ellipse 12.png" onclick="togglemenu()"></a>
+        <a href=""><i class="fa-regular fa-comment"></i></a>
+        <a href=""><i class="fa-regular fa-bell"></i></a>
+      </div>
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="../../../images/Ellipse 12.png">
+            <h3>Daniel James</h3>
+          </div>
+          <hr>
+    
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-user"></i>
+            <p>Edit profile</p>
+            <span>></span>
+          </a>
+    
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-gear"></i>
+            <p>Settings</p>
+            <span>></span>
+          </a>
+    
+          <a href="../../Login/student/login-page.html" class="sub-menu-link">
+            <i class="fa-solid fa-door-open"></i>
+            <p>Logout</p>
+            <span>></span>
+          </a>
+    
+        </div>
+      </div>
+    
+    </div>
 
-      <a href="#" class="sub-menu-link">
-        <i class="fa-solid fa-gear"></i>
-        <p>Settings</p>
-        <span>></span>
-      </a>
 
-      <a href="../../Login/student/login-page.html" class="sub-menu-link">
-        <i class="fa-solid fa-door-open"></i>
-        <p>Logout</p>
-        <span>></span>
-      </a>
+    <div class="hero">
+      <p class="font">Add New class</p>
+      <p class="fonts">New Class</p>
 
+      <div class="det"> <!--nothing serious just to shape the div coursedet-->
+        <div class="coursedet">
+          <p class="hm">Course details</p>
+
+          <div class="fcd">
+            <div class="fac">
+              <div>
+                <p class="font">Faculty</p>
+                <select>
+                  <option>Select one</option>
+                  <option>Faculty of science</option>
+                  <option>Faculty of Medicine</option>
+                  <option>Faculty of Agriculture</option>
+                  <option>Faculty of Finance</option>
+                  <option>Faculty of </option>
+                </select>
+              </div>
+              <div>
+                <p class="font">Department</p>
+                <select>
+                  <option>Select one</option>
+                  <option>Department of Computer Science</option>
+                  <option>Department of Mass Communication</option>
+                  <option>Department of Fishery</option>
+                  <option>Department of Business Administration</option>
+                  <option>Department of Applied Biology</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <p class="font">Course</p>
+              <select>
+                <option>Select one</option>
+                <option>CSC225</option>
+                <option>BUS122</option>
+                <option>GST311</option>
+                <option>EDS 221</option>
+                <option>DLD221</option>
+              </select>
+            </div>
+            
+          </div>
+
+          <p class="hm">Schedule</p>
+          <div class="fcd">
+            <div class="fac">
+              <div>
+                <p class="font">Venue</p>
+                <select>
+                  <option>Select one</option>
+                  <option>Faculty of science</option>
+                  <option>Faculty of Medicine</option>
+                  <option>Faculty of Agriculture</option>
+                  <option>Faculty of Finance</option>
+                  <option>Faculty of </option>
+                </select>
+              </div>
+              <div>
+                <p class="font">Lecture day(s)</p>
+                <select>
+                  <option>Select one</option>
+                  <option>Department of Computer Science</option>
+                  <option>Department of Mass Communication</option>
+                  <option>Department of Fishery</option>
+                  <option>Department of Business Administration</option>
+                  <option>Department of Applied Biology</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <p class="font">Lecture Period(s)</p>
+              <select>
+                <option>Select one</option>
+                <option>CSC225</option>
+                <option>BUS122</option>
+                <option>GST311</option>
+                <option>EDS 221</option>
+                <option>DLD221</option>
+              </select>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
 
-  <div style="display: flex; gap: 1.5rem; margin-top: 6.5rem; padding-left: 2rem;">
-    <a style="cursor: pointer;"><i class="fa-solid fa-arrow-left"></i></a>
-    <p style="font-family: poppins; font-size: 14px;">Add New class</p>
+ 
 
-  </div>
 
-  
-  
+
+</div>
   <!-- <form id="form">
     <div>
       <label for="course">Course Name</label>

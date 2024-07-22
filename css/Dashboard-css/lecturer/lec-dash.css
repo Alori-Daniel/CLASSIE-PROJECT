@@ -6,14 +6,26 @@
 body {
     background-color: #f8fbfe;
 }
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 
 .head {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-
+    padding-bottom: 10px;
 }
-
+.content{
+    width:75%;
+}
+.hero{
+    width: 95%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
 .welcome-header {
     padding-left: 20px;
 }
@@ -44,10 +56,32 @@ body {
     background-color: #FFFFFF;
     height: 100vh;
     float: left;
-    width: 285px;
+    width: 25%;
     /* position: */
+}
+.fcd{
+    width: 90%;
+    padding: 20px 20px;
+    background-color: #f8fbfe;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    
+}
+.fac{
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-
+select{
+    width: 250px;
+    height: 35px;
+    padding-right: 40px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
 }
 
 .logo-image {
@@ -57,21 +91,24 @@ body {
     padding-left: 20px;
     padding-top: 50px;
 }
-
+.searchbar{
+    display: flex;
+    justify-content: center;
+}
 .search {
     padding-left: 25px;
-    margin-left: 5px;
     padding-right: 90px;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 8px;
-    margin-top: 50px;
+    margin-top: 30px;
     border: 0.5px;
+    width: 95%;
     background-color: #D9D9D9
 }
 
 .search::placeholder {
-
+    font-size: 14px;
     font-family: poppins;
 }
 
@@ -97,12 +134,45 @@ body {
     /* padding: 30px; */
 
 }
+.font{
+    font-family: poppins; 
+    font-size: 14px;
+    font-weight: 400;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.fonts{
+    font-family: poppins; 
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+    width: fit-content;
+}
+.hm{
+    width: 99%;
+    font-family: poppins; 
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding-left: 10px;
+}
 
 .student-bar a:hover {
     color: rebeccapurple;
 }
 
-
+.coursedet{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width:97%;
+    height: 500px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .student-bar i {
     color: #355389;
     padding-right: 0.5rem;
@@ -156,6 +226,12 @@ body {
 .details {
     display: flex;
     justify-content: space-between;
+}
+.det{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .details a {
