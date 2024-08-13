@@ -1,2 +1,2 @@
 # CLASSIE-PROJECT
-A Platform for managing and monitoring students records 
+An E-Learning Platform for managing, scheduling and monitoring students records 
